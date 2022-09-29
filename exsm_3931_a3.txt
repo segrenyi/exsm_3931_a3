@@ -1,0 +1,37 @@
+Pseudocode Customer View
+FUNCTION GetSnack
+IF MachinePower > MachineOff THEN
+	go to another machine 
+ELSE 
+	select snack from options
+ENDIF
+READ SnackCost
+	IF SnackCost is TooExpensive THEN
+		find another snack
+	ELSE get money ready
+			Put >/=money in machine slot
+			INPUT SnackCode into keypad
+			IF Snack dispense THEN
+				collect snack from MachineDispenser		
+			ELSE call number on machine
+			ENDIF
+		IF MoneyInput is >Price THEN
+			collect change and enjoy snack
+		ELSE enjoy snack
+		ENDIF
+	ENDIF
+REPEAT-UNTIL SnackCost is affordable
+ENDIF SnackCost is high for all options
+
+
+Pseudocode Machine View
+DISPLAY on screen "Please make your selection"
+User gives input
+IF User inputs <money THEN
+	DISPLAY "Please insert correct amount"
+ELSEIF User inputs >money THEN
+	DispenseSnack and DispenseChange
+ELSE User inputs =money THEN
+	DispenseSnack
+ENDIF
+DISPLAY "Have a Great Day!"
