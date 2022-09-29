@@ -24,6 +24,7 @@ REPEAT-UNTIL SnackCost is affordable
 ENDIF SnackCost is high for all options
 
 
+
 Pseudocode Machine View
 DISPLAY on screen "Please make your selection"
 User gives input
@@ -35,3 +36,14 @@ ELSE User inputs =money THEN
 	DispenseSnack
 ENDIF
 DISPLAY "Have a Great Day!"
+
+
+
+Pseudocode Machine Owner View
+UNLOCK machine with key
+Empty our coin storage
+IF coins in storage check what items are sold THEN
+	restock with matching product
+ELSE do not restock
+ENDIF
+LOCK machine with key
