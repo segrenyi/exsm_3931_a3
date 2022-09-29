@@ -41,7 +41,7 @@ DISPLAY "Have a Great Day!"
 
 Pseudocode Machine Owner View
 UNLOCK machine with key
-Empty our coin storage
+Empty out coin storage
 IF coins in storage check what items are sold THEN
 	restock with matching product
 ELSE do not restock
